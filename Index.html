@@ -1,0 +1,229 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/sidebar-collapse.css" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
+    <script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+        	$("#carousel1").CloudCarousel(
+        		{
+        			reflHeight: 40,
+        			reflGap:2,
+        			titleBox: $('#da-vinci-title'),
+        			altBox: $('#da-vinci-alt'),
+        			buttonLeft: $('#slider-left-but'),
+        			buttonRight: $('#slider-right-but'),
+        			yRadius:30,
+        			xPos: 480,
+        			yPos: 32,
+        			speed:0.15
+        		}
+        	);
+        });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <style type="text/css">
+        /* reset */
+        .menu_3, .menu_3 ul, .menu_3 li, .menu_3 a {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+
+        /* menu */
+        .menu_3 {
+            height: 40px;
+            width: 100%;
+            direction: rtl;
+            background: #4c4e5a;
+            background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+            background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+            background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+            background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+            background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+            border-radius: 5px;
+        }
+
+            .menu_3 li {
+                position: relative;
+                list-style: none;
+                float: right;
+                display: block;
+                height: 40px;
+            }
+
+                /* links */
+
+                .menu_3 li a {
+                    display: block;
+                    padding: 0 14px;
+                    margin: 6px 0;
+                    line-height: 28px;
+                    text-decoration: none;
+                    border-left: 1px solid #393942;
+                    border-right: 1px solid #4f5058;
+                    font-family: Tahoma, Arial, sans-serif;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #f3f3f3;
+                    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+                    -webkit-transition: color .2s ease-in-out;
+                    -moz-transition: color .2s ease-in-out;
+                    -o-transition: color .2s ease-in-out;
+                    -ms-transition: color .2s ease-in-out;
+                    transition: color .2s ease-in-out;
+                }
+
+                .menu_3 li:first-child a {
+                    border-left: none;
+                }
+
+                .menu_3 li:last-child a {
+                    border-right: none;
+                }
+
+                .menu_3 li:hover > a {
+                    color: #8fde62;
+                }
+
+            /* sub menu */
+
+            .menu_3 ul {
+                position: absolute;
+                top: 40px;
+                right: 0;
+                opacity: 0;
+                background: #1f2024;
+                -webkit-border-radius: 0 0 5px 5px;
+                -moz-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;
+                -webkit-transition: opacity .25s ease .1s;
+                -moz-transition: opacity .25s ease .1s;
+                -o-transition: opacity .25s ease .1s;
+                -ms-transition: opacity .25s ease .1s;
+                transition: opacity .25s ease .1s;
+            }
+
+            .menu_3 li:hover > ul {
+                opacity: 1;
+            }
+
+            .menu_3 ul li {
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+                -webkit-transition: height .25s ease .1s;
+                -moz-transition: height .25s ease .1s;
+                -o-transition: height .25s ease .1s;
+                -ms-transition: height .25s ease .1s;
+                transition: height .25s ease .1s;
+            }
+
+            .menu_3 li:hover > ul li {
+                height: 36px;
+                overflow: visible;
+                padding: 0;
+                direction: rtl;
+            }
+
+            .menu_3 ul li a {
+                width: 100px;
+                padding: 4px 30px 4px 0;
+                margin: 0;
+                border: none;
+                border-bottom: 1px solid #353539;
+            }
+
+            .menu_3 ul li:last-child a {
+                border: none;
+            }
+
+            /* icon */
+
+            .menu_3 a.documents {
+                background: url(images/docs.png) no-repeat right;
+            }
+
+            .menu_3 a.messages {
+                background: url(images/bubble.png) no-repeat right;
+            }
+
+            .menu_3 a.signout {
+                background: url(images/arrow.png) no-repeat right;
+            }
+    </style>
+    
+</head>
+<body>
+    <form id="form2" runat="server">
+        <ul class="menu_3" style="float:right">
+            <li>
+                <a href="#">صفحه اصلی</a>
+            </li>
+            <li>
+                <a href="#">خدمات</a>
+                <ul style="text-align:right">
+                    <li>
+                        <a class="documents" href="#">عضویت</a>
+                    </li>
+                    <li>
+                        <a class="messages" href="#">ورود کاربران</a>
+                    </li>
+                    <li>
+                        <a class="signout" href="#">درباره ما</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+
+                <a href="#">تماس با ما</a>
+            </li>
+        </ul>
+        <div>
+            <center id="home">
+                <div id="carousel1" style="width:960px; height:300px;background:none;overflow:scroll; margin-top: 20px">
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/01.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/02.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/03.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/04.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/05.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/06.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/07.jpg" /></a>
+                    <a rel="lightbox"><img class="cloudcarousel" src="images/slider/08.jpg" /></a>
+                </div>
+            </center>
+            <center style="background-color: #1B1B1B;height:50px">
+                <input id="slider-left-but" type="button" value="" />
+                <input id="slider-right-but" type="button" value="" />
+            </center>
+            <br />
+            <br />
+            <br />
+            <br />
+            
+
+
+        </div>
+        <div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <br />
+        </div>
+        
+    </form>
+</body>
+</html>

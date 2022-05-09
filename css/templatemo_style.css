@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #6e6e6e;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.4em; 
+    /*background-color: #3b3939;
+	background-repeat: repeat-x;
+	background-position: top;*/
+	
+}
+
+#home { 
+	background-image: url(../images/templatemo_bg_homepage.jpg); 
+}
+
+#slider-left-but { 
+	display: block; 
+	width: 30px; 
+	height: 30px; 
+	border: none; 
+	background: url(../images/templatemo_slider_left.png); 
+	margin-right: 10px; 
+}
+
+#slider-right-but { 
+	display: block; 
+	width: 30px; 
+	height: 30px; 
+	border: none; 
+	background: url(../images/templatemo_slider_right.png); 
+}
